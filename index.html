@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Book Entreprise : espace élèves et parents pour les PFMP.">
+  <title>Book Entreprise — Élèves et parents</title>
+  <link rel="icon" type="image/jpeg" href="./logo-book-entreprise.jpg">
+  <style>
+    :root { --google-header-height: 56px; }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: #fff; }
+    .frame-viewport { position: fixed; inset: 0; overflow: hidden; background: #fff; }
+    .app-frame {
+      display: block; width: 100%; height: calc(100% + var(--google-header-height));
+      position: absolute; top: calc(-1 * var(--google-header-height)); left: 0;
+      border: 0; background: #fff;
+    }
+    .fallback { display: none; }
+    @media print { html, body { overflow: auto; } }
+  </style>
+</head>
+<body>
+  <main class="frame-viewport" aria-label="Application Book Entreprise">
+    <iframe
+      id="book-app"
+      class="app-frame"
+      title="Book Entreprise : espace élèves et parents"
+      src="https://script.google.com/a/macros/lycee-les-eucalyptus.org/s/AKfycbwQoKZOD2LeDyGqBRIVl6_uAPe6z3iGEW-w60ybCMu2Z3Rf4HAy-8ap_9FwFcKuHo7-qA/exec?page=book-entreprises-eleves-pfmp"
+      allow="clipboard-read; clipboard-write; fullscreen"
+      allowfullscreen
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
+  </main>
+</body>
+</html>
